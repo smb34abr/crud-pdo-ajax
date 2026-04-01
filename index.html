@@ -3,10 +3,47 @@ require_once "models/conexion.php"; ?>
 
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Crud php, mysql y ajax</title>
-    </head>
-    <body></body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud php, mysql y ajax</title>
+    <link rel="stylesheet" href="views/css/dataTables.css" />
+</head>
+
+<body>
+    <table id="example" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="views/js/jquery-3.7.1.js"></script>
+    <script src="views/js/dataTables.js"></script>
+
+    <script>
+        new DataTable('#example');
+    </script>
+</body>
+
 </html>
